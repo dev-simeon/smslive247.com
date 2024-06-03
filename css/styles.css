@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg-primary: #ffffff;
+    --bg-grey: #F2F4F8;
+    --bg-accent: #007BFF;
+    --text-color: #666D83;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+}
+
+.bg-primary{
+    background-color: var(--bg-primary) !important;
+    border-color: var(--bg-primary) !important;
+}
+
+.bg-grey{
+    background-color: var(--bg-grey) !important;
+    border-color: var(--bg-grey) !important;
+}
+
+.bg-accent{
+    background-color: var(--bg-accent) !important;
+    border-color: var(--bg-accent) !important;
+}
+
+.text-primary{
+    color: var(--text-color) !important;
+}
+
+.text-secondary{
+    color: var(--bg-grey) !important;
+}
+
+.text-accent {
+    color: var(--bg-accent) !important
+}
+
+.text-white{
+    color: var(--bg-grey) !important;
+}
+
+.btn.btn-primary {
+    background-color: var(--bg-accent) !important;
+    border-color: var(--bg-accent) !important;
+    color: var(--bg-primary) !important;
+}
+
+    .btn.btn-primary:hover,
+    .btn.btn-primary:focus,
+    .btn.btn-primary:active{
+        color: var(--bg-primary) !important;
+        background-color: var(--bg-accent) !important;
+        border-color: var(--bg-accent) !important;
+        opacity: 0.7;
+    }
+
+.btn.btn-outline-primary{
+    background-color: var(--bg-primary) !important;
+    border-color: var(--bg-accent) !important;
+    color: var(--bg-accent) !important;
+}
+
+    .btn.btn-outline-primary:hover,
+    .btn.btn-outline-primary:focus,
+    .btn.btn-outline-primary:active{
+        color: var(--bg-primary) !important;
+        background-color: var(--bg-accent) !important;
+        border-color: var(--bg-accent) !important;
+    }
+
+
+section{
+    padding: 4rem 0;
+}
+
+h1{
+    font-size: 2.8125rem;
+    line-height: 1.1;
+}
+
+h2{
+    font-size: 2.3125rem;
+}
+
+h3{
+    font-size: 1.8125rem;
+}
+
+h5{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 1.25rem;
+}
+
+.nav-item .nav-link{
+    font-size: 0.875rem;
+    color: var(--text-color) !important;
+}
+
+.nav-item .nav-link:hover::after,
+.nav-item .nav-link:active::after,
+.nav-item .nav-link.active::after{
+    display: block;
+    padding-top: 0.5rem;
+    content: '';
+    width: 50%;
+    border-bottom: 0.1875rem solid var(--bg-accent);
+    border-radius: 1px;
+}
+
+
+section.landing-page{
+    background-image: url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 1.5rem;
+    padding-bottom: 9rem;
+}
+
+.landing-page .container{
+    gap: 15rem;
+}
+
+.content{
+    width: 65%;
+}
+
+section.facts{
+    margin: -3.8rem;
+    width: 100%;
+}
+
+.facts.fact{
+    width: 16.875rem;
+}
