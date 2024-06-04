@@ -13,7 +13,7 @@
 
 body{
     background-color: var(--bg-primary);
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
 .bg-primary{
@@ -98,8 +98,12 @@ h5{
     font-size: 1.5rem;
 }
 
-h5{
+h6{
     font-size: 1.25rem;
+}
+
+.font-small{
+    font-size: 0.875rem;
 }
 
 .nav-item .nav-link{
@@ -133,14 +137,62 @@ section.landing-page{
 }
 
 .content{
-    width: 65%;
+    width: 63%;
 }
 
 section.facts{
-    margin: -3.8rem;
-    width: 100%;
+    margin-top: -3.5rem;
 }
 
 .facts.fact{
     width: 16.875rem;
+}
+
+.steps{
+    width: 18.75rem;
+}
+
+.use-cases-card{
+    width: 25rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 1.5rem;
+}
+
+.use-cases-card .icon::before{
+    font-size: 3rem;
+}
+
+.use-cases-card .icon{
+    margin-top: -3rem;
+}
+
+.feature-img{
+    width: 30rem;
+}
+
+.api-integration-img{
+    width: 32rem;
+}
+
+.pricing-wrapper{
+    width: 31.25rem;
+    margin: 0 auto;
+}
+
+.prices{
+    font-size: 0.875rem;
+}
+
+.carousel-item .card,
+.accordion{
+    width: 37.5rem;
+    margin: 0 auto;
+}
+
+.carousel-control-prev{
+    left: 6.5rem;
+}
+
+.carousel-control-next{
+    right: 6.5rem;
 }
