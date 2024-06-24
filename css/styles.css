@@ -68,17 +68,18 @@ body{
     color: var(--bg-accent) !important;
 }
 
-    .btn.btn-outline-primary:hover,
-    .btn.btn-outline-primary:focus,
-    .btn.btn-outline-primary:active{
-        color: var(--bg-primary) !important;
-        background-color: var(--bg-accent) !important;
-        border-color: var(--bg-accent) !important;
-    }
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary:active{
+    color: var(--bg-primary) !important;
+    background-color: var(--bg-accent) !important;
+    border-color: var(--bg-accent) !important;
+}
 
 
-section{
-    padding: 4rem 0;
+section,
+.section{
+    padding-block: 4rem;
 }
 
 h1{
@@ -106,9 +107,25 @@ h6{
     font-size: 0.875rem;
 }
 
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+
 .nav-item .nav-link{
     font-size: 0.875rem;
     color: var(--text-color) !important;
+}
+
+@keyframes slideIn {
+    from {
+        transform: scaleX(0); /* Start with no width */
+    }
+    to {
+        transform: scaleX(1); /* End with full width */
+    }
 }
 
 .nav-item .nav-link:hover::after,
@@ -120,6 +137,7 @@ h6{
     width: 50%;
     border-bottom: 0.1875rem solid var(--bg-accent);
     border-radius: 1px;
+    animation: slideIn 0.3s ease; /* Apply the animation */
 }
 
 
@@ -129,33 +147,28 @@ section.landing-page{
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 1.5rem;
-    padding-bottom: 9rem;
+    padding-bottom: 10rem;
 }
 
 .landing-page .container{
-    gap: 15rem;
+    gap: 10rem;
 }
 
 .content{
-    width: 63%;
+    width: 62%;
 }
 
 section.facts{
     margin-top: -3.5rem;
 }
 
-.facts.fact{
-    width: 16.875rem;
-}
-
 .steps{
-    width: 18.75rem;
+    width: auto;
 }
 
 .use-cases-card{
     width: 25rem;
     border: 1px solid #d9d9d9;
-    border-radius: 1.5rem;
 }
 
 .use-cases-card .icon::before{
@@ -172,6 +185,11 @@ section.facts{
 
 .api-integration-img{
     width: 32rem;
+}
+
+.check-icon{
+    width: 1.5625rem;
+    height: 1.5625rem;
 }
 
 .pricing-wrapper{
@@ -195,4 +213,202 @@ section.facts{
 
 .carousel-control-next{
     right: 6.5rem;
+}
+
+.footer-depth{
+    background-color: #2F3349;
+    width: 21.875rem;
+    height: 30rem;
+}
+
+.contact-wrapper{
+    margin-top: 6.8rem;
+    padding-block: 4rem;
+}
+
+.contact-icon{
+    font-size: 1.875rem;
+}
+
+footer{
+    margin-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/************************************************************************ Media Query **************************************************************************/
+@media screen and (min-width: 1400px) {
+    .landing-page .container{
+        gap: 15rem;
+    }
+
+    .steps{
+        width: 18.75rem !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel-control-prev{
+        left: 0;
+    }
+    
+    .carousel-control-next{
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h1{
+        font-size: 2.375rem;
+    }
+
+    h2{
+        font-size: 1.875rem;
+    }
+
+    h3{
+        font-size: 1.5625rem;
+    }
+
+    h5{
+        font-size: 1.25rem;
+    }
+
+    h6{
+        font-size: 1.125rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .steps{
+        width: 18.75rem !important;
+    }
+
+    .use-cases-card{
+        width: 20rem;
+    }
+
+    .use-cases-card .icon::before{
+        font-size: 2rem;
+    }
+
+    .use-cases-card .icon{
+        margin-top: -2.5rem;
+    }
+
+    .feature-img{
+        width: 18rem;
+    }
+
+    .api-integration-img{
+        width: 25rem;
+    }
+
+    .api-benefit{
+        width: 20rem;
+    }
+
+    .carousel-item .card{
+        width: 32rem;
+    }
+
+    .contact-option{
+        width: 11.5625rem;
+    }
+
+    .footer-depth{
+        height: 39.8rem;
+    }
+
+    footer{
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .steps,
+    .use-cases-card,
+    .accordion{
+        width: 100% !important;
+    }
+
+    .carousel-item .card{
+        width: 100%;
+    }
+
+    .carousel-control-prev{
+        display: none;
+    }
+    
+    .carousel-control-next{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section.facts{
+        width: 100%;
+        justify-content: start !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    section,
+    .section{
+        padding-block: 2.5rem;
+    }
+
+    h1{
+        font-size: 1.875rem;
+    }
+
+    h2{
+        font-size: 1.5625rem;
+    }
+
+    h3{
+        font-size: 1.25rem;
+    }
+
+    h5{
+        font-size: 1.125rem;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
+    .footer-depth{
+       display: none;
+    }
+
+    .contact-wrapper{
+        margin-top: 0;
+        padding-block: 2.5rem;
+        border-radius: 1rem !important;
+    }
+
+    .contact-icon{
+        font-size: 1.25rem;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pricing-wrapper,
+    .api-benefit{
+        width: 100%;
+    }
 }
