@@ -394,7 +394,7 @@ footer{
     .contact-wrapper{
         margin-top: 0;
         padding-block: 2.5rem;
-        border-radius: 1rem !important;
+        border-radius: 0.925rem !important;
     }
 
     .contact-icon{
